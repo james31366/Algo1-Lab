@@ -7,7 +7,7 @@ void find_max_min(int b[], int n, int *mx, int *mn) {
     }
 }
 
-main() {
+int main() {
     int a[1000];
     int n;
 

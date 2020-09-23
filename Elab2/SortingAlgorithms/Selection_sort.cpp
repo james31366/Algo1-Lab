@@ -20,7 +20,7 @@ void selection_sort(int a[], int n) {
     }
 }
 
-main() {
+int main() {
     int a[1000];
     int n;
     cin >> n;

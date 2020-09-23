@@ -1,3 +1,6 @@
 *.json
-.clang-format
 *.exe
+.idea/
+.vscode/
+cmake-build-debug/
+build/

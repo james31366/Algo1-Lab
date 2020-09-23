@@ -3,11 +3,12 @@
 using namespace std;
 
 int main() {
-    int n;
+    int n = 0;
     cin >> n;
     int x[n];
     int result = 0;
 
+    // User input numbers into arrays
     for (int i = 0; i < n; i++) {
         cin >> x[i];
     }

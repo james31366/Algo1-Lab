@@ -10,7 +10,7 @@ void classic_starts(int n) {
 }
 
 int main() {
-    int n;
+    int n = 0;
     cin >> n;
     classic_starts(n);
     return 0;

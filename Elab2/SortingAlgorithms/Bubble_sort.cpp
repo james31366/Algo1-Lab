@@ -19,13 +19,15 @@ void bubble_sort(int a[], int n) {
     }
 }
 
-main() {
+int main() {
     int a[1000];
-    int n;
+    int n = 0;
     cin >> n;
     for (int i = 0; i < n; i++)
         cin >> a[i];
     bubble_sort(a, n);
     for (int i = 0; i < n; i++)
         cout << a[i] << endl;
+
+    return 0;
 }
