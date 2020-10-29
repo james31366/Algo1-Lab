@@ -1,14 +1,18 @@
 #include <iostream>
 using namespace std;
 
-void selection_sort(int a[], int n) {
-    for (int i = 0; i < n - 1; i++) {
+void selection_sort(int a[], int n)
+{
+    for (int i = 0; i < n - 1; i++)
+    {
         int min_idx = i;
         int min_val = a[i];
 
         // find smallest elements from a[i] ... a[n-1]
-        for (int j = i; j < n; j++) {
-            if (a[j] < min_val) {
+        for (int j = i; j < n; j++)
+        {
+            if (a[j] < min_val)
+            {
                 // update min_idx and min_val accordingly
                 min_idx = j;
                 min_val = a[j];
@@ -20,7 +24,8 @@ void selection_sort(int a[], int n) {
     }
 }
 
-int main() {
+int main()
+{
     int a[1000];
     int n;
     cin >> n;

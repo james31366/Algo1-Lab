@@ -1,15 +1,21 @@
 #include <iostream>
 using namespace std;
 
-int main() {
+int main()
+{
     int grade;
     cin >> grade;
 
-    if (grade >= 80) {
+    if (grade >= 80)
+    {
         cout << "Excellent job.";
-    } else if (grade >= 50 && grade < 80) {
+    }
+    else if (grade >= 50 && grade < 80)
+    {
         cout << "Okay.";
-    } else {
+    }
+    else
+    {
         cout << "Please try harder.";
     }
 }

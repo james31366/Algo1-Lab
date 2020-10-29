@@ -1,7 +1,8 @@
 #include <iostream>
 using namespace std;
 
-void doSomething(int *a, int *b, int *c) {
+void doSomething(int *a, int *b, int *c)
+{
 
     *a += 10;
 
@@ -10,7 +11,8 @@ void doSomething(int *a, int *b, int *c) {
     *c += 1000;
 }
 
-int main() {
+int main()
+{
     int x = 1;
     int y = 2;
     int z = 3;
