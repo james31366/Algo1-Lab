@@ -10,9 +10,11 @@ void insertion_sort(int a[], int n)
         {
             // our current element is in a[j]
             // compares a[j] with a[j-1]
-            if ()
+            if (a[j] < a[j - 1])
             {
-                // need to swap a[j] with its preceding element
+                int temp = a[j - 1];
+                a[j - 1] = a[j];
+                a[j] = temp;
             }
             else
             {

@@ -8,9 +8,9 @@ void remove_quotes(char *src, char *dest)
         if (*src != '"' && *src != '\'')
         {
             *dest = *src;
+            dest++;
         }
         src++;
-        dest++;
     }
 }
 

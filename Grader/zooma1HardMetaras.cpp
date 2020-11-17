@@ -5,12 +5,12 @@ typedef int valueType;
 
 struct ListNode
 {
-    valueType index; //ball index insert
+    valueType ball_number; //ball index insert
     valueType color; //ball color
     ListNode *next;
 
     ListNode(valueType index, valueType color, ListNode *next = 0)
-        : index(index), color(color), next(next) {}
+        : ball_number(index), color(color), next(next) {}
 };
 
 void print_list(ListNode *node, int n)
@@ -19,7 +19,7 @@ void print_list(ListNode *node, int n)
     int i = 0;
     while (node != nullptr)
     {
-        a[i] = node->index;
+        a[i] = node->ball_number;
         node = node->next;
         i++;
     }
@@ -61,7 +61,7 @@ int main()
         ListNode *h = header;
         while (h->next != nullptr)
         {
-            if (h->next->index == insert_i)
+            if (h->next->ball_number == insert_i)
             {
                 insert_first(h, n + j, insert_c);
                 break;

@@ -31,6 +31,12 @@ void insert_front(ListNode *header, colour x)
 
 void free_list(ListNode *&header)
 {
+    while (header->next != 0)
+    {
+        ListNode *temp = header->next;
+        header->next = header->next->next;
+        delete (temp);
+    }
 }
 
 int main()
