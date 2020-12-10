@@ -4,6 +4,7 @@ using namespace std;
 
 typedef int colour;
 
+
 struct ListNode
 {
     colour val;

@@ -30,29 +30,53 @@ void insert(TreeNode *&r, valueType x)
     }
 }
 
-void inOrder(TreeNode *r)
+TreeNode *find(TreeNode *r, valueType x)
 {
     if (!r)
     {
-        return;
+        return 0;
     }
-    inOrder(r->left);
-    cout << r->val << endl;
-    inOrder(r->right);
+    else if (r->val == x)
+    {
+        return r;
+    }
+    else if (r->val < x)
+    {
+        find(r->right, x);
+    }
+    else
+    {
+        find(r->left, x);
+    }
 }
 
-int main()
+main()
 {
     TreeNode *root = 0;
 
-    int n;
+    int n, k;
     cin >> n;
     for (int i = 0; i < n; i++)
     {
         int x;
+        cin >> k;
         cin >> x;
-        insert(root, x);
-    }
+        switch (k)
+        {
+        case 1:
+            insert(root, x);
+            break;
 
-    inOrder(root);
+        case 2:
+            if (find(root, x))
+            {
+                cout << 1 << endl;
+            }
+            else
+            {
+                cout << 0 << endl;
+            }
+            break;
+        }
+    }
 }
