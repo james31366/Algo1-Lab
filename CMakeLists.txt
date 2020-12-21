@@ -11,3 +11,5 @@ include_directories(mid63)
 
 
 add_executable(breadth-first-search Learn/breadth-first-search.cpp)
+add_executable(Escape Elab2/Pointer/Escape.cpp)
+add_executable(Escape_Nut Elab2/Pointer/Escape_Nut.cpp)
