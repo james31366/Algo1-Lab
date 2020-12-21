@@ -5,9 +5,8 @@ using namespace std;
 int main()
 {
     int l, n, t;
-    char words[n+1][l+1];
-
     cin >> l >> n >> t;
+    char words[n][l];
 
     for (int i = 0; i < n; i++)
     {
